@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- TÍTULO -->
+<title>Vinoteca Norte Argentino</title>
+
+<style>
+
+/* ESTILOS GENERALES */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+    background:#4b001f;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+/* MENÚ */
+nav{
+    background:#2e0012;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* PORTADA */
+.hero{
+    background:url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop') center/cover;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+    font-size:40px;
+}
+
+/* PRODUCTOS */
+.productos{
+    padding:40px;
+    text-align:center;
+}
+
+.productos h2{
+    color:#4b001f;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    padding-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#4b001f;
+}
+
+.card p{
+    padding:0 15px;
+}
+
+/* PRECIO */
+.precio{
+    font-size:22px;
+    color:#d4af37;
+    font-weight:bold;
+}
+
+/* BOTÓN */
+button{
+    background:#4b001f;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    margin:15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e0012;
+}
+
+/* RESEÑAS */
+.resenas{
+    background:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.resenas h2{
+    color:#4b001f;
+}
+
+.form-resena{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form-resena input,
+.form-resena textarea{
+    padding:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.form-resena textarea{
+    height:120px;
+    resize:none;
+}
+
+/* CONTACTO */
+.contacto{
+    background:#4b001f;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#2e0012;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header>
+
+    <h1>Vinoteca Norte Argentino</h1>
+
+    <p>
+        Los mejores vinos nacionales e internacionales
+        al mejor precio.
+    </p>
+
+</header>
+
+<!-- MENÚ -->
+<nav>
+
+    <a href="#">Inicio</a>
+    <a href="#">Vinos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Contacto</a>
+
+</nav>
+
+<!-- PORTADA -->
+<section class="hero">
+
+    <h2>Descubrí sabores únicos de nuestros vinos
+    </h2>
+
+</section>
+
+<!-- PRODUCTOS -->
+<section class="productos">
+
+    <h2>Nuestros Vinos</h2>
+
+    <div class="cards">
+
+        <!-- VINO 1 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop">
+
+            <h3>Malbec Reserva</h3>
+
+            <p>
+                Vino tinto premium de Mendoza,
+                con sabor intenso y elegante.
+            </p>
+
+            <p class="precio">$15.000</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <!-- VINO 2 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1569919659476-f0852f6834b7?q=80&w=800&auto=format&fit=crop">
+
+            <h3>Cabernet Sauvignon</h3>
+
+            <p>
+                Un vino sofisticado ideal
+                para ocasiones especiales.
+            </p>
+
+            <p class="precio">$18.000</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+        <!-- VINO 3 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=800&auto=format&fit=crop">
+
+            <h3>Vino Rosé</h3>
+
+            <p>
+                Perfecto para reuniones,
+                cenas y celebraciones.
+            </p>
+
+            <p class="precio">$12.000</p>
+
+            <button>Comprar</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESEÑAS -->
+<section class="resenas">
+
+    <h2>⭐ Dejanos tu reseña</h2>
+
+    <p>
+        Queremos conocer tu experiencia
+        con nuestros vinos.
+    </p>
+
+    <form class="form-resena">
+
+        <input type="text" placeholder="Tu nombre" required>
+
+        <textarea placeholder="Escribí tu reseña..." required></textarea>
+
+        <button type="submit">
+            Enviar reseña
+        </button>
+
+    </form>
+
+</section>
+
+<!-- MEDIOS DE PAGO -->
+<section class="productos">
+
+    <h2>💳 Medios de Pago</h2>
+
+    <p>
+        Aceptamos diferentes formas de pago para tu comodidad.
+    </p>
+
+    <div class="cards">
+
+        <!-- EFECTIVO -->
+        <div class="card">
+
+            <h3>💵 Efectivo</h3>
+
+            <p>
+                Pagá en el local o al recibir tu pedido.
+            </p>
+
+        </div>
+
+        <!-- TARJETAS -->
+        <div class="card">
+
+            <h3>💳 Tarjetas</h3>
+
+            <p>
+                Aceptamos Visa, Mastercard y débito.
+            </p>
+
+        </div>
+
+        <!-- TRANSFERENCIA -->
+        <div class="card">
+
+            <h3>📲 Transferencias</h3>
+
+            <p>
+                Pagos rápidos mediante transferencia bancaria.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+
+    <h2>Contacto</h2>
+
+    <p>📍 San Miguel de Tucumán</p>
+
+    <p>📞 +54 381 0000000</p>
+
+    <p>📷 Instagram: @vinotecapremium</p>
+
+    <p>👍 Facebook: Vinoteca Premium</p>
+
+    <p>🎵 TikTok: @vinotecapremium</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Vinoteca Premium -
+        Todos los derechos reservados
+    </p>
+
+</footer>
+
+</body>
+</html>
